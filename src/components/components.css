@@ -1,0 +1,259 @@
+.planet-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 50px;
+    height: 100vh
+}
+  
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+  
+.image img {
+    max-width: 100%;
+    height: 400px;
+    padding: 40px;
+}
+  
+.info {
+    max-width: 50%;
+}
+
+.planet-title {
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.information {
+    font-size: 17px;
+}
+
+.button {
+    padding: 5px;
+}
+
+.btn-custom {
+    color: white; /* Text color white by default */
+    border-radius: 5%;
+    border: 1px solid rgb(143, 138, 138); /* Add border around the button */
+    padding: 6px 12px; /* Adjust padding to ensure uniform size */
+    font-size: 16px; /* Adjust font size if needed */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for background and border */
+}
+
+.btn-custom:hover {
+    background-color: #007bff; /* Background color on hover (blue) */
+    border-color: #0056b3; /* Darker border color when hovered */
+}
+
+.source {
+    color: rgba(121, 126, 134, 0.907);
+    padding: 2% 0;
+}
+
+.source a {
+    /* text-decoration: none; */
+    color: gray;
+}
+
+.source a:hover {
+    color: #007bff;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+}
+
+.box {
+    border: 1px solid rgb(164, 151, 151);
+    padding: 1% 5%;  
+    justify-content: center;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: small;
+    padding-bottom: 1%;
+}
+
+.content {
+    text-transform: uppercase;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.planet-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 50px;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.image img {
+    max-width: 100%;
+    height: 400px;
+    padding: 40px;
+}
+
+.info {
+    max-width: 50%;
+}
+
+.planet-title {
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.information {
+    font-size: 17px;
+}
+
+.button {
+    padding: 5px;
+}
+
+.btn-custom {
+    color: white;
+    border-radius: 5%;
+    border: 1px solid rgb(143, 138, 138);
+    padding: 6px 12px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #007bff;
+    border-color: #0056b3;
+}
+
+.source {
+    color: rgba(121, 126, 134, 0.907);
+    padding: 2% 0;
+}
+
+.source a {
+    color: gray;
+}
+
+.source a:hover {
+    color: #007bff;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+}
+
+.box {
+    border: 1px solid rgb(164, 151, 151);
+    padding: 1% 5%;
+    justify-content: center;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: small;
+    padding-bottom: 1%;
+}
+
+.content {
+    text-transform: uppercase;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+/* Responsive Styles for Small Devices */
+@media (max-width: 768px) {
+    .planet-content {
+        padding-top: 0;
+    }
+
+    .main {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .image img {
+        height: 250px;
+        padding: 20px;
+    }
+
+    .info {
+        max-width: 100%;
+    }
+
+    .planet-title {
+        font-size: 25px;
+    }
+
+    .information {
+        font-size: 14px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 100%;
+        height: 25%;
+        padding: 2% 5%;
+    }
+
+    .title {
+        font-size: smaller;
+    }
+
+    .content {
+        font-size: small;
+    }
+
+    .btn-custom {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+    .planet-title {
+        font-size: 22px;
+    }
+
+    .information {
+        font-size: 12px;
+    }
+
+    .image img {
+        height: 200px;
+    }
+
+    .btn-custom {
+        padding: 4px 6px;
+        font-size: 12px;
+    }
+
+    .footer {
+        padding: 1% 0;
+    }
+}

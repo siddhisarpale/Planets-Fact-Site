@@ -1,0 +1,94 @@
+body {
+    background-image: url('assets/solarSystem2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.planet-content {
+    background-image: url('assets/space.jpg');
+    color: white;
+    width: 100%;
+}
+
+/* Style for the nav container */
+.nav {
+    display: flex;             /* Enable flexbox */
+    justify-content: space-between; /* Distribute space between title and planets */
+    align-items: center;       /* Vertically center items */
+    padding: 20px 30px;        /* Add some padding around */
+    /* background-color: #282c34; Optional: Change background color */
+    color: white;              /* Optional: Set text color */
+}
+  
+/* Style for the title */
+.mainTitle {
+    font-size: 24px;           /* Set font size for the title */
+    font-weight: bold;         /* Make the title bold */
+    text-decoration: none;
+    color: white;              /* Set text color */
+}
+  
+/* Style for the planets container */
+.planets {
+    display: flex;             /* Align links horizontally */
+    gap: 20px;                 /* Space between the links */
+}
+  
+/* Style for each planet link */
+.planet-link {
+    text-decoration: none;     /* Remove the underline from links */
+    color: white;              /* Set text color */
+    font-size: 18px;           /* Set font size */
+    font-weight: normal;       /* Optional: Set font weight */
+    transition: transform 0.3s ease; /* Smooth transition */
+    padding-left: 5px;
+}
+  
+.planet-link:hover {
+    color: #ffcc00;            /* Change color on hover */
+    transform: scale(1.17);
+}
+  
+.active-link {
+    font-weight: bold;
+    color: #ffcc00;
+    transform: scale(1.25);
+    /* background-color: #007bff; Highlight color when active */
+}
+
+@media (max-width: 768px) {
+    .mainTitle {
+        font-size: 20px;
+    }
+
+    .planet-link:hover {
+        transform: scale(1.10);  /* Slightly smaller scale on smaller screens */
+    }
+
+    .active-link {
+        transform: scale(1.2); /* Adjust active link scale for smaller devices */
+    }
+}
+
+/* Additional Responsive Styles for Extra Small Devices */
+@media (max-width: 480px) {
+    .mainTitle {
+        font-size: 18px; /* Smaller title font size */
+    }
+
+    .planet-link {
+        font-size: 14px; /* Smaller font size for links */
+    }
+
+    .planet-link:hover {
+        transform: scale(1.05); /* Even smaller hover scale for small screens */
+    }
+
+    .active-link {
+        transform: scale(1.15); /* Adjust active link scale for very small devices */
+    }
+}
